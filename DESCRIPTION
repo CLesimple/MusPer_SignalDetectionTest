@@ -1,0 +1,25 @@
+Package: MusPerSDT
+Type: Package
+Title: Adaptive 2AFC Signal Detection Testing for Music Signals
+Version: 0.0.0.9000
+Authors@R: person(given = "CLesimple", family = "", role = c("aut", "cre"), email = "you@example.com")
+Description: Tools for running adaptive two-alternative forced-choice (2AFC)
+    signal detection tests to estimate detection thresholds for soft music
+    signals in within-subject, hearing-impaired listener studies. Provides two
+    interchangeable adaptive engines behind a common interface: a Levitt (1971)
+    transformed up-down staircase (2-down/1-up, 70.7% target) and a Bayesian
+    QUEST+/Psi engine (Watson & Pelli, 1983; Kontsevich & Tyler, 1999). Includes
+    helpers for interleaving multiple adaptive tracks (listener x condition x
+    signal) and a simulated observer for testing.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
